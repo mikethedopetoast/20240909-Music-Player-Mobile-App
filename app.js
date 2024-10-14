@@ -94,6 +94,10 @@ const repeatBtn = document.querySelector("i.fa-repeat")
 const volumeBtn = document.querySelector("i.fa-volume-high")
 const volumeSlider = document.querySelector(".volume-slider")
 
+music.onloadedmetadata = (() => {
+    alert("Metadata for audio loaded")
+})
+
 // play button click event
 
 playBtn.addEventListener("click", () => {
